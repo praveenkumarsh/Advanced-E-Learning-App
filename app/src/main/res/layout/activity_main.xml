@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_button"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/userDetail"
+        android:text="Hello User,\nWelcome in Elearning App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_settings"
+        android:background="@drawable/round_button"
+
+        />
+
+
+    <Button
+        android:id="@+id/btnLearningMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:text="Learning Mode"
+        android:background="@drawable/round_button"
+        android:layout_above="@+id/btnExamMode"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+
+
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+
+        android:src="@drawable/learningss"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/btnExamMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="150dp"
+        android:text="Exam Mode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_button"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+
+        />
+
+    <ImageButton
+        android:id="@+id/btnLogout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_logout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_button"
+
+
+
+        />
+
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/btnDash"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_dash"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_button"
+
+
+
+        />
+
+</RelativeLayout>

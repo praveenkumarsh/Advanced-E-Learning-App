@@ -1,0 +1,64 @@
+<resources>
+    <!-- No of Faces Preference -->
+    <string-array name="No_Of_Face_entries">
+        <item>One</item>
+        <item>Disable</item>
+    </string-array>
+
+    <string-array name="No_Of_Face_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- No Face Timeout Preference -->
+    <string-array name="Warning_No_Face_Timeout_entries">
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>15 seconds</item>
+        <item>Disable</item>
+    </string-array>
+
+    <string-array name="Warning_No_Face_Timeout_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- No Face Timeout Preference -->
+    <string-array name="Warning_Number_Face_Show_Timeout_entries">
+        <item>2 or more</item>
+        <item>3 or more</item>
+        <item>Disable</item>
+    </string-array>
+
+    <string-array name="Warning_Number_Face_Show_Timeout_values">
+        <item>2</item>
+        <item>3</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- Select Camera Preference -->
+    <string-array name="camera_location_entries">
+        <item>Front Camera</item>
+        <item>Back Camera</item>
+    </string-array>
+
+    <string-array name="camera_location_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+
+    <!-- Camera Preview Preference -->
+    <string-array name="camera_preview_size_entries">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+
+    <string-array name="camera_preview_size_values">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+</resources>

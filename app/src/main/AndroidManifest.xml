@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.praveen.learningapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/networksecurity_config"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustResize">
+        <activity android:name="com.praveen.learningapp.DashBoard_Module.DashboardActivity"></activity>
+        <activity android:name="com.praveen.learningapp.Chat_Module.GroupChatActivity" />
+        <activity android:name="com.praveen.learningapp.Activities.LearnActivity" />
+        <activity
+            android:name="com.praveen.learningapp.Settings_Module.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name="com.praveen.learningapp.Test_Module.TestWebActivity" />
+        <activity android:name="com.praveen.learningapp.Activities.ExamActivity" />
+        <activity android:name="com.praveen.learningapp.FaceRecognition_Module.Training" />
+        <activity android:name="com.praveen.learningapp.FaceRecognition_Module.training_Main" />
+        <activity android:name="com.praveen.learningapp.Learn_Module.LearningWebActivity" />
+        <activity android:name="com.praveen.learningapp.registerandlogin.UserDetailEntry" />
+        <activity android:name="com.praveen.learningapp.MainActivity" />
+        <activity android:name="com.praveen.learningapp.registerandlogin.RegistrationActivity" />
+        <activity android:name="com.praveen.learningapp.registerandlogin.SplashScrActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.praveen.learningapp.registerandlogin.LoginActivity" />
+        <activity android:name="com.praveen.learningapp.registerandlogin.PWresetActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <service
+            android:name="com.praveen.learningapp.Services_Module.CameraViewService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.praveen.learningapp.Services_Module.WarningView"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-feature
+        android:name="android.hardware.camera.front.autofocus"
+        android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+    <dist:module dist:instant="true" />
+
+</manifest>

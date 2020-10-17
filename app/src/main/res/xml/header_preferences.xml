@@ -1,0 +1,129 @@
+<!--
+  ~ Copyright 2018 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<androidx.preference.PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="About">
+
+        <PreferenceScreen
+            android:icon="@drawable/ic_camera_front"
+            android:key="Developer"
+            android:title="Developed By : Praveen Kumar Sharma"
+            android:summary="Email ID : dce.pks@gmail.com">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:icon="@drawable/ic_share_black_24dp"
+            android:key="shareapp"
+            android:title="Share App APK">
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:icon="@drawable/ic_share_black_24dp"
+            android:key="shareappLink"
+            android:title="Share App via Link">
+        </PreferenceScreen>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="App Settings (Only For Developers)">
+
+
+        <SwitchPreferenceCompat
+            app:key="pref_face_recognition_mode"
+            app:summaryOff="Disable"
+            app:summaryOn="Enable"
+            app:title="Use Face Recognition Mode" />
+
+
+<!--        <ListPreference-->
+<!--            app:defaultValue="1"-->
+<!--            android:dependency="pref_face_recognition_mode"-->
+<!--            app:summary="Default"-->
+<!--            app:entries="@array/No_Of_Face_entries"-->
+<!--            app:entryValues="@array/No_Of_Face_values"-->
+<!--            app:key="pref_no_of_faces"-->
+<!--            app:title="No of Faces"-->
+<!--            app:useSimpleSummaryProvider="true" />-->
+
+        <SwitchPreferenceCompat
+            app:key="pref_display_widget"
+            app:summaryOff="Disable"
+            app:summaryOn="Enable"
+            app:title="Display Widget" />
+
+        <ListPreference
+            app:defaultValue="10"
+            app:summary="Default"
+            app:entries="@array/Warning_No_Face_Timeout_entries"
+            app:entryValues="@array/Warning_No_Face_Timeout_values"
+            app:key="pref_warning_no_face"
+            app:title="No Face Capturing Warning"
+            app:useSimpleSummaryProvider="true" />
+
+<!--        <ListPreference-->
+<!--            app:defaultValue="2"-->
+<!--            app:summary="Default"-->
+<!--            app:entries="@array/Warning_Number_Face_Show_Timeout_entries"-->
+<!--            app:entryValues="@array/Warning_Number_Face_Show_Timeout_values"-->
+<!--            app:key="pref_warning_number_of_face"-->
+<!--            app:title="Warning if no. of face shown"-->
+<!--            app:useSimpleSummaryProvider="true" />-->
+
+        <Preference
+            android:fragment="com.praveen.learningapp.Settings_Module.SettingsActivity$CameraSettingFragment"
+            android:icon="@drawable/ic_photo_camera_black"
+            android:key="pref_camera_settings"
+            android:title="Camera Settings"
+            android:summary="Set Camera Settings">
+        </Preference>
+
+    </PreferenceCategory>
+
+        <PreferenceCategory app:title="Help">
+
+            <PreferenceScreen
+                android:icon="@drawable/ic_help_black_24dp"
+                android:key="pref_help"
+                android:title="Help"
+                android:summary="Get online help">
+            </PreferenceScreen>
+
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Refresh and Reset">
+
+            <PreferenceScreen
+                android:icon="@drawable/ic_help_black_24dp"
+                android:key="pref_refresh"
+                android:title="Refresh"
+                android:summary="Refresh Settings">
+            </PreferenceScreen>
+
+            <PreferenceScreen
+                android:icon="@drawable/ic_help_black_24dp"
+                android:key="pref_reset"
+                android:title="Reset"
+                android:summary="Reset Settings">
+            </PreferenceScreen>
+
+
+        </PreferenceCategory>
+
+
+</androidx.preference.PreferenceScreen>

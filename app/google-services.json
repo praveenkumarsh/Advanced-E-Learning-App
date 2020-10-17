@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "989642220624",
+    "firebase_url": "https://elearningapp-0.firebaseio.com",
+    "project_id": "elearningapp-0",
+    "storage_bucket": "elearningapp-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989642220624:android:93b19c25a4d80fc6b29d55",
+        "android_client_info": {
+          "package_name": "com.praveen.learningapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989642220624-m0iadbc64pd1n1pdl020t2gb957i6kjp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo5-rq2Qr9S9ef8hPK-E9eqpSCZ_AB9rw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989642220624-m0iadbc64pd1n1pdl020t2gb957i6kjp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
